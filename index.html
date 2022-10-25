@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <body class="content">
+    <h1>GitPages Tutorial with HTML and React</h1>
+    <p>
+      Be sure your project is pushed to a GitHub repository before following the
+      tutorials below to post a Webpage on GitPages using HTML or React App.
+    </p>
+
+    <!-- Tutorial - Posting an HTML site to GitPages -->
+    <div id="tutorial1" class="HTML">
+      <h2>
+        GitPages using HTML
+        <div class="logoRow">
+          <div class="column">
+            <br />
+            <img
+              src="./tutorial_images/html.png"
+              alt="html logo"
+              id="htmlLogo"
+            />
+          </div>
+        </div>
+      </h2>
+      <div id="dropdownSection1" style="display: none">
+        <h2>Publishing a HTML Project to GitPages</h2>
+        <div>
+          <ul>
+            <li>
+              An <i class="initialSteps">index.html</i> file is required to
+              reside on the root of the repository.
+            </li>
+            <li>
+              Go to your GitHub repostiory ie.
+              <i>https://github.com/</i><i class="initialSteps">your_user</i>/<i
+                class="initialSteps"
+                >your_repo</i
+              >
+            </li>
+            <li>Click on the <i class="initialSteps">Settings</i> icon.</li>
+            <li>
+              Click
+              <i class="initialSteps">Pages</i> on the left-hand menu.
+            </li>
+            <li>
+              Under <i class="initialSteps">Branch</i> click on the dropdown
+              menu and select <i class="initialSteps">main</i>.
+            </li>
+
+            <li>
+              Click <i class="initialSteps">Save</i> and wait for the page to
+              refresh.
+            </li>
+            <li>
+              Navigate back to the Repostiory page. You may need to refresh a
+              few times until you see the <i>Environments</i> tab appear on the
+              right.
+            </li>
+            <li>
+              Click on <i class="initialSteps">github-pages</i>
+              when it appears.
+            </li>
+            <li>
+              Once the site is active you will see
+              <i class="initialSteps">View Deployment</i>. You can click on this
+              button to see the live preview of your website.
+            </li>
+
+            <li>
+              You can copy you URL and distribute as needed. It will look
+              something like: <i>https://</i
+              ><i class="initialSteps">your_user</i>.github.io/<i
+                class="initialSteps"
+                >your_repo_name</i
+              >/
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Tutorial 2 -->
+    <div id="tutorial2" class="React">
+      <h2>
+        GitPages using React
+        <div class="logoRow">
+          <div class="column">
+            <br />
+            <img
+              src="./tutorial_images/react.png"
+              alt="react logo"
+              id="reactLogo"
+            />
+          </div>
+        </div>
+      </h2>
+
+      <div id="dropdownSection2" style="display: none">
+        <h2>Publishing a React App to GitPages</h2>
+        <div>
+          <ul>
+            <li>Ensure you have pushed React to your GitHub repository.</li>
+            <li>
+              install gh-pages package by running the following command in your
+              terminal:
+              <i class="initialSteps">npm install gh-pages --save-dev</i>
+            </li>
+            <li>
+              Add the following properties to your <i>package.json</i> file:
+              <i class="initialSteps">
+                "homepage": "https://<i class="initialSteps">your_user</i
+                >.github.io/<i class="initialSteps">your_repo_name</i>/"
+              </i>
+              <i class="initialSteps">
+                "scripts": { "predeploy": "npm run build", "deploy": "gh-pages
+                -d build" }
+              </i>
+            </li>
+            <li>
+              Run the following command in your terminal:
+              <i class="initialSteps">npm run deploy</i>
+            </li>
+            <li>
+              Navigate to your GitHub repository and click on the
+              <i class="initialSteps">Settings</i> icon.
+            </li>
+            <li>
+              Click on <i class="initialSteps">Pages</i> on the left-hand menu.
+            </li>
+            <li>
+              Under <i class="initialSteps">Branch</i> click on the dropdown
+              menu and select <i class="initialSteps">gh-pages</i>.
+            </li>
+            <li>
+              Click <i class="initialSteps">Save</i> and wait for the page to
+              refresh.
+            </li>
+            <li>
+              Navigate back to the Repostiory page. You may need to refresh a
+              few times until you see the <i>Environments</i> tab appear on the
+              right.
+            </li>
+            <li>
+              Click on <i class="initialSteps">github-pages</i>
+              when it appears.
+            </li>
+            <li>
+              Once the site is active you will see
+              <i class="initialSteps">View Deployment</i>. You can click on this
+              button to see the live preview of your website.
+            </li>
+            <li>
+              You can copy you URL and distribute as needed. It will look
+              something like: <i>https://</i
+              ><i class="initialSteps">your_user</i>.github.io/<i
+                class="initialSteps"
+                >your_repo_name</i
+              >/index.html
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+html {
+  height: 100vh;
+}
+
+p,
+a {
+  color: #ffffffaa;
+}
+#tutorialLink1,
+#tutorialLink2 {
+  color: darkgreen;
+}
+
+.hyperLink {
+  color: darkgreen;
+  font-size: 20px;
+}
+
+.initialSteps {
+  color: red;
+}
+
+body {
+  background-color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoRow {
+  display: flex;
+}
+.column {
+  width: 100px;
+}
+#htmlLogo,
+#reactLogo {
+  flex: 50%;
+  /* filter: invert(100%); */
+  width: 100px;
+  margin: 0;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  color: #ffffffaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tutorial1,
+#tutorial2,
+#tutorial3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #8383832f;
+  width: 50%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  transition: 0.5s background-color;
+}
+
+/* color tutorial1 slowly on hover */
+#tutorial1:hover,
+#tutorial2:hover,
+#tutorial3:hover {
+  background-color: #066ab760;
+  transition-delay: 0.01s;
+}
+
+#commandEmail {
+  color: darkblue;
+}
+.command {
+  color: darkred;
+}
+.command2 {
+  color: darkgreen;
+}
+
+#dropdownSection1,
+#dropdownSection2,
+#dropdownSection3 {
+  color: black;
+  background-color: #ffffffaa;
+  border: 1px solid #ccc;
+  filter: drop-shadow(5px 2px 5px #26262680);
+  width: 75%;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* center image */
+img {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* media query for mobile */
+@media screen and (max-width: 600px) {
+  #tutorial1,
+  #tutorial2,
+  #tutorial3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  #dropdownSection1,
+  #dropdownSection2,
+  #dropdownSection3 {
+    width: 85%;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+/* Background */
+
+.bg {
+  animation: slide 40s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #191919 50%, #005a96 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 15s;
+}
+
+.bg3 {
+  animation-duration: 15s;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
