@@ -1,1 +1,17 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+plugins { id 'com.android.application' }
+android {
+    namespace 'dev.routeclock.app'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'dev.routeclock.app'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+    // No third-party dependencies or API keys are necessary.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
